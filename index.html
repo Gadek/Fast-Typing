@@ -1,147 +1,66 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html lang="pl">
     <head>
-        
         <meta charset="UTF-8">
         <title>Szybkie pisanie</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
     </head>
-    
+
     <body>
-        <table id="ranking" cellpadding="0" cellspacing="0">
-        <tr><td>Lp.</td><td>Czas[s]</td></tr>
-        </table>
-        <button id="start-button">Zacznij</button><br>
-        <p id="counting">
-            Kod pojawi się za <span id="seconds-to-start"></span>s!
-        </p>
-        <p id="code" onselectstart="return false" onselect="return false" oncopy="return false"></p>
-        <input id="answer" class="entry-code">
-        <p id="false-answer">Podałeś złą odpowiedź</p>
-        <p id="summarize">Zajęło Ci to <span id="seconds-to-answer"></span> s!</p>
-        
-        
-        
-        <div class="help">
-            <p>Po naciśnięciu przycisku "Zacznij" odczekasz 3 sekundy. Po tym czasie pojawi Ci się ciąg znaków, ktory będziesz musiał jak najszybciej przepisać. Po lewej stronie znajduje się tabela uzyskanych wyników. Powodzenia :)</p>
+      <p>Grasz jako <span id="name"><span></p>
+        <button id="changeName-button">Zmień</button>
+      <div class="wrapper">
+        <div class="menu">
+          <p>Twoje imie:</p>
+          <input id="name-input">
+          <button id="menu-button">Graj</button>
         </div>
+        <div class="game-wrapper">
+          <button id="start-button">Zacznij</button>
+          <span id="seconds-to-start"></span>
+
+          <div id="game" class="game">
+            <p id="code">fsd</p>
+            <input id="answer" class="entry-code">
+            <p id="summarize">Zajęło Ci to <span id="seconds-to-answer"></span> s!</p>
+          </div>
+
+        </div>
+
+        <div class="score">
+          <table id="ranking" cellpadding="0" cellspacing="0">
+          <tr><td>Lp.</td><td>Czas[s]</td></tr>
+          </table>
+        </div>
+      </div>
     </body>
     <script src="js/backstage.js"></script>
     <script src="js/sketch.js"></script>
+
+    <style>
+      body {
+        background: black;
+        color:white;
+        font-size:22px;
+      }
+      .wrapper {
+        width:400px;
+        margin: 100px auto;
+        background-color: blue;
+      }
+      .game-wrapper {
+        height: 300px;
+        display:none;
+      }
+      .game {
+        display: none;
+      }
+      #summarize {
+        display:none;
+      }
+      .menu {
+        height:300px;
+      }
+    </style>
 </html>
-=======
-<!DOCTYPE HTML>
-<html lang="pl">
-    <head>
-        
-        <meta charset="UTF-8">
-        <title>Szybkie pisanie</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
-    </head>
-    
-    <body>
-        <table id="ranking" cellpadding="0" cellspacing="0">
-        <tr><td>Lp.</td><td>Czas[s]</td></tr>
-        </table>
-        <button id="start-button">Zacznij</button><br>
-        <p id="counting">
-            Kod pojawi się za <span id="seconds-to-start"></span>s!
-        </p>
-        <p id="code" onselectstart="return false" onselect="return false" oncopy="return false"></p>
-        <input id="answer" class="entry-code">
-        <p id="false-answer">Podałeś złą odpowiedź</p>
-        <p id="summarize">Zajęło Ci to <span id="seconds-to-answer"></span> s!</p>
-        
-        
-        
-        <div class="help">
-            <p>Po naciśnięciu przycisku "Zacznij" odczekasz 3 sekundy. Po tym czasie pojawi Ci się ciąg znaków, ktory będziesz musiał jak najszybciej przepisać. Po lewej stronie znajduje się tabela uzyskanych wyników. Powodzenia :)</p>
-        </div>
-    </body>
-    <script src="js/backstage.js"></script>
-    <script src="js/sketch.js"></script>
-</html>
->>>>>>> parent of 7fc9647... Zmodyfikowana wersja
-=======
-<!DOCTYPE HTML>
-<html lang="pl">
-    <head>
-        
-        <meta charset="UTF-8">
-        <title>Szybkie pisanie</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
-    </head>
-    
-    <body>
-        <table id="ranking" cellpadding="0" cellspacing="0">
-        <tr><td>Lp.</td><td>Czas[s]</td></tr>
-        </table>
-        <button id="start-button">Zacznij</button><br>
-        <p id="counting">
-            Kod pojawi się za <span id="seconds-to-start"></span>s!
-        </p>
-        <p id="code" onselectstart="return false" onselect="return false" oncopy="return false"></p>
-        <input id="answer" class="entry-code">
-        <p id="false-answer">Podałeś złą odpowiedź</p>
-        <p id="summarize">Zajęło Ci to <span id="seconds-to-answer"></span> s!</p>
-        
-        
-        
-    <script src="js/sketch.js"></script>
-        <div class="help">
-            <p>Po naciśnięciu przycisku "Zacznij" odczekasz 3 sekundy. Po tym czasie pojawi Ci się ciąg znaków, ktory będziesz musiał jak najszybciej przepisać. Po lewej stronie znajduje się tabela uzyskanych wyników. Powodzenia :)</p>
-        </div>
-    </body>
-    <script src="js/backstage.js"></script>
-    <script src="js/sketch.js"></script>
-</html>
->>>>>>> parent of 7fc9647... Zmodyfikowana wersja
-=======
-<!DOCTYPE HTML>
-<html lang="pl">
-    <head>
-        
-        <meta charset="UTF-8">
-        <title>Szybkie pisanie</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
-    </head>
-    
-    <body>
-        <table id="ranking" cellpadding="0" cellspacing="0">
-        <tr><td>Lp.</td><td>Czas[s]</td></tr>
-        </table>
-        <button id="start-button">Zacznij</button><br>
-        <p id="counting">
-            Kod pojawi się za <span id="seconds-to-start"></span>s!
-        </p>
-        <p id="code" onselectstart="return false" onselect="return false" oncopy="return false"></p>
-        <input id="answer" class="entry-code">
-        <p id="false-answer">Podałeś złą odpowiedź</p>
-        <p id="summarize">Zajęło Ci to <span id="seconds-to-answer"></span> s!</p>
-        
-        
-        
-        <div class="help">
-            <p>Po naciśnięciu przycisku "Zacznij" odczekasz 3 sekundy. Po tym czasie pojawi Ci się ciąg znaków, ktory będziesz musiał jak najszybciej przepisać. Po lewej stronie znajduje się tabela uzyskanych wyników. Powodzenia :)</p>
-        </div>
-    </body>
-    <script src="js/backstage.js"></script>
-    <script src="js/sketch.js"></script>
-</html>
->>>>>>> parent of 7fc9647... Zmodyfikowana wersja
