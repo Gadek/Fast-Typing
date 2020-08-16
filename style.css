@@ -1,0 +1,54 @@
+body {
+    height:100vh;
+    margin:0;
+    font-size:22px;
+    background: black;
+    color:white;
+}
+
+
+.entry-code {
+    position:absolute;
+    left: 50%;
+    top: 70px;
+}
+
+#code, #counting, p#summarize, .entry-code {
+    display: none;
+}
+
+button#start-button {
+    padding:5px;
+    font-size:20px;
+    width:140px;
+    left:50%;
+    top:80px;
+    border:5px groove white;
+}
+p#code, #counting, #start-button, #summarize {
+    cursor: default;
+    letter-spacing: .9px;
+    position:absolute;
+    left: 50%;
+    top: 20px;
+}
+p#false-answer {
+    color: red;
+    display: none;
+    position:absolute;
+    left: 50%;
+    top: 80px;
+}
+
+
+div.help {
+    background-color:#bfe0f9;
+    padding:10px 25px;
+    border:2px solid #214c9b;
+    font-size:17px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    color:black;
+}
